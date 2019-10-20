@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout</title>
+    <style>
+        .container{
+            width: 100%;
+            margin: 0 auto;
+            height: 0 auto;
+            border: 1px solid black;
+        }
+        .header{
+            border: 1px dashed green;
+            width: 100%;
+            padding: 10px 10px;
+        }
+        .promotion{
+            border: 1px solid black;
+        }
+        .content{
+            width: 100%;
+            border: 1px dashed blue;
+        }
+        .catagory{
+            width: 100%;
+            border: 1px dotted black;
+        }
+        .card1{
+            width: 32.9%;
+            border: 1px solid black;
+            display: inline-block;
+        }
+        .card2{
+            width: 49.5%;
+            border: 1px dotted green;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div> <br/>
+        <div class="promotion">
+            <img src="../images/cover.jpg" alt="promotion">
+        </div> <br/>
+        <div class="content">
+            <div class="category">
+                <label for="Catagory">Catagory</label>
+                <hr/>
+            </div>
+            <div class="menu">
+                <div class="card1">Clothes</div>
+                <div class="card1">Skirt</div>
+                <div class="card1">T-Shirt</div>
+            </div> <br/>
+            <div class="device">
+                <div class="card2">Phone</div>
+                <div class="card2">PC</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
