@@ -10,59 +10,47 @@
         .container {
             width: 80%;
             margin-left: 10%;
+            margin-right: 10%;
+            border: 1px solid black;
         }
-
         .header {
             text-align: center;
         }
-
         #headercenter {
             text-align: center;
         }
-
         #headerleft {
             text-align: left;
             display: inline-block;
-            margin-left: 5%;
         }
-
         #headerright {
             text-align: right;
             display: inline-block;
-            margin-left: 15%;
         }
-
         img {
             width: 220px;
             height: 220px;
         }
-
         .bodyer {
             width: 80%;
             margin-left: 10%;
+            margin-right: 10%;
         }
-
-        table,
-        tr {
+        .bodyer#card4{
             text-align: center;
         }
-
+        table,tr {
+            text-align: center;
+        }
         legend {
             text-align: center;
         }
-
-        th {
+        .ro {
             text-align: right;
         }
-
-        td {
+        .row {
             text-align: left;
         }
-
-        #card4 {
-            text-align: center;
-        }
-
         #button {
             text-align: center;
         }
@@ -88,25 +76,26 @@
         </div>
         <div class="bodyer">
             <form action="">
-                <div id="card1">
+                <div class="card1">
                     <fieldset>
-                        <legend>Personal Information</legend>
+                        <legend><b>Personal Information</b></legend>
                         <table>
                             <tr>
-                                <th>Khmer ID Number:</th>
-                                <td><input type="text" name="" id="idNumber" placeholder="Input Khmer ID Number">
+                                <th class="ro">Khmer ID Number:</th>
+                                <td class="row"><input type="text" name="" id="idNumber"
+                                        placeholder="Input Khmer ID Number">
                                 </td>
                             </tr>
                             <tr>
-                                <th>Fullname:</th>
-                                <td id="">
+                                <th class="ro">Fullname:</th>
+                                <td class="row">
                                     <input type="text" name="" id="firstName" placeholder="Firstname">
                                     <input type="text" name="" id="lastName" placeholder="Lastname">
                                 </td>
                             </tr>
                             <tr>
-                                <th>Gender:</th>
-                                <td>
+                                <th class="ro">Gender:</th>
+                                <td class="row">
                                     <select>
                                         <option value="Female">Female</option>
                                         <option value="Male">Male</option>
@@ -114,78 +103,84 @@
                                 </td>
                             </tr>
                             <tr>
-                                <th>Date of Birth:</th>
-                                <td><input type="date" name="" id="dob"></td>
+                                <th class="ro">Date of Birth:</th>
+                                <td class="row"><input type="date" name="" id="dob"></td>
                             </tr>
                             <tr>
-                                <th>Place of Birth:</th>
-                                <td><input type="text" name="" id="pob" placeholder="Place of Birth"></td>
+                                <th class="ro">Place of Birth:</th>
+                                <td class="row"><input type="text" name="" id="pob" placeholder="Place of Birth"></td>
                             </tr>
                             <tr>
-                                <th>Permanent Address:</th>
-                                <td><textarea name="" id="perAddress"></textarea></td>
-                            </tr>
-                        </table>
-                    </fieldset>
-                </div>
-                <div id="card2">
-                    <fieldset>
-                        <legend>Contact</legend>
-                        <table>
-                            <tr>
-                                <th>Contact:</th>
-                                <td><input type="text" name="" id="contact" placeholder="Phone Number"></td>
-                                <th>Emergency Contact:</th>
-                                <td><input type="text" name="" id="emergencyContact" placeholder="Emergency contact"></td>
-                            </tr>
-                            <tr>
-                                <th>Email:</th>
-                                <td><input type="email" name="" id="mail" placeholder="Email"></td>
+                                <th class="ro">Permanent Address:</th>
+                                <td class="row"><textarea name="" id="perAddress"></textarea></td>
                             </tr>
                         </table>
                     </fieldset>
                 </div>
-                <div id="card3">
+                <div class="card2">
                     <fieldset>
-                        <legend>Family Background</legend>
+                        <legend><b>Contact</b></legend>
                         <table>
                             <tr>
-                                <th>Father name:</th>
-                                <td><input type="text" name="" id="fatherName" placeholder="Father name"></td>
-                                <th>Occupation:</th>
-                                <td><input type="text" name="" id="fatherOccupation" placeholder="Occupation"></td>
+                                <th class="ro">Contact:</th>
+                                <td class="row"><input type="text" name="" id="contact" placeholder="Phone Number"></td>
+                                <th class="ro">Emergency Contact:</th>
+                                <td class="row"><input type="text" name="" id="emergencyContact"
+                                        placeholder="Emergency contact">
+                                </td>
                             </tr>
                             <tr>
-                                <th>Address:</th>
-                                <td><textarea name="" id="fatherAddress"></textarea></td>
-                            </tr>
-                            <tr>
-                                <th>Mother name:</th>
-                                <td><input type="text" name="" id="motherName" placeholder="Mother name"></td>
-                                <th>Occupation:</th>
-                                <td><input type="text" name="" id="motherOccupation" placeholder="Occupation"></td>
-                            </tr>
-                            <tr>
-                                <th>Address:</th>
-                                <td><textarea name="" id="motherAddress"></textarea></td>
+                                <th class="ro">Email:</th>
+                                <td class="row"><input type="email" name="" id="mail" placeholder="Email"></td>
                             </tr>
                         </table>
                     </fieldset>
                 </div>
-                <div id="card4">
+                <div class="card3">
                     <fieldset>
-                        <legend>Type of Course</legend>
+                        <legend><b>Family Background</b></legend>
                         <table>
                             <tr>
-                                <th>Starting Date:</th>
-                                <td>
-                                    <input type="radio" name="course" id="">ITE Course 2018
-                                    <input type="radio" name="course" id="">Short Course 2018
+                                <th class="ro">Father name:</th>
+                                <td class="row"><input type="text" name="" id="fatherName" placeholder="Father name">
+                                </td>
+                                <th class="ro">Occupation:</th>
+                                <td class="row"><input type="text" name="" id="fatherOccupation"
+                                        placeholder="Occupation"></td>
+                            </tr>
+                            <tr>
+                                <th class="ro">Address:</th>
+                                <td class="row"><textarea name="" id="fatherAddress"></textarea></td>
+                            </tr>
+                            <tr>
+                                <th class="ro">Mother name:</th>
+                                <td class="row"><input type="text" name="" id="motherName" placeholder="Mother name">
+                                </td>
+                                <th class="ro">Occupation:</th>
+                                <td class="row"><input type="text" name="" id="motherOccupation"
+                                        placeholder="Occupation"></td>
+                            </tr>
+                            <tr>
+                                <th class="ro">Address:</th>
+                                <td class="row"><textarea name="" id="motherAddress"></textarea></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </div>
+                <div class="card4">
+                    <fieldset>
+                        <legend><b>Type of Course</b></legend>
+                        <table>
+                            <tr>
+                                <th class="ro1">Starting Date:</th>
+                                <td class="row1">
+                                    <input type="radio" name="course" id="iteCourse">ITE Course 2018
+                                    <input type="radio" name="course" id="shortCourse">Short Course 2018
                                 </td>
                             </tr>
                         </table>
                     </fieldset>
-                </div> <br/>
+                </div> <br />
                 <div id="button">
                     <input type="submit" value="Submit">
                     <input type="reset">
